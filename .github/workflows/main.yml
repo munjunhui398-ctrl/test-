@@ -1,10 +1,14 @@
-name: test-workflow
-
-on: [push]
+name: security-check
+op: [push]
 
 jobs:
-  test:
+    security:
     runs-on: ubuntu-latest
     steps:
-      - name: success step
-        run: echo "success"
+    -name:checkout code
+    uses:actions/checkout@v4
+
+    -name: Dependency vulnerability scan
+    run:
+    echo "취약점 발견!"
+    exit 1

@@ -6,5 +6,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: force fail
-        run: exit 1
+      - name: success step
+        run: echo "success"

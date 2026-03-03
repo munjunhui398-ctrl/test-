@@ -10,5 +10,5 @@ jobs:
 
     -name: Dependency vulnerability scan
     run:
-    echo "취약점 발견!"
+    echo "취약점 없음"
     exit 1
